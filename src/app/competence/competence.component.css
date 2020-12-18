@@ -1,0 +1,111 @@
+.row {
+    margin-bottom: 25px;
+    margin-top: 25px;
+}
+/* Styles des Icones*/
+.row img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+    width: 50%;
+    max-width: 90px;
+    min-width: 50px;
+    width: 11vw;
+}
+.col-icon p{
+
+    font-family: quickSand;
+    font-size: 15px;
+    text-align: center;
+    visibility: hidden;
+}
+
+.col-icon:hover p{
+    visibility: visible;
+    animation: fadeIn ease 0.5s;
+    -webkit-animation: fadeIn ease 0.5s;
+    -moz-animation: fadeIn ease 0.5s;
+    -o-animation: fadeIn ease 0.5s;
+    -ms-animation: fadeIn ease 0.5s;
+
+}
+.col-icon:hover img{
+
+    animation: pulse  0.5s;
+    -webkit-animation: pulse  0.5s;
+    -moz-animation: pulse  0.5s;
+    -o-animation: pulse  0.5s;
+    -ms-animation: pulse  0.5s;
+}
+
+/* Style des titres de mes compétences */
+.comps{
+    text-align: center;
+    font-size: clamp(16px, 8vw, 35px);
+    font-family: quickSand;
+    margin-bottom: 2%;
+
+
+}
+/* Animation */
+
+
+
+.fade-in {
+    animation: fadeIn ease 1s;
+    -webkit-animation: fadeIn ease 1s;
+    -moz-animation: fadeIn ease 1s;
+    -o-animation: fadeIn ease 1s;
+    -ms-animation: fadeIn ease 1s;
+    }
+    @keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
+    
+    @-moz-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
+    
+    @-webkit-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
+    
+    @-o-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
+    
+    @-ms-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
+/*Gestion des tailles d'ecran*/
+/* Taille smartphone */
+@media only screen and (max-width:800px){
+     
+    .large-panel{
+        display: none;
+    }
+}
+    
+/* Taille Page web */
+
+@media only screen and (min-width:800px){
+
+    .small-panel{
+        display: none;
+    }
+   
+    
+    .prog-panel{
+           
+        border-right: dotted;
+        border-right-color: darkgray;      
+    }
+   
+    
+}
