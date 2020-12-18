@@ -47,6 +47,17 @@ export class CompetenceComponent implements OnInit {
     new Icon("Bootstrap", "https://icongr.am/devicon/bootstrap-plain-wordmark.svg?size=128&color=4d4d9b","0.55s","Logo Bootstrap")
   ]
 
+/*  Tableau contenant les icon pour la partie AudioVisuel*/
+
+  audiovisuel_icons:Array<Icon> = [
+    new Icon("AngularJs", "https://icongr.am/devicon/angularjs-original.svg?size=128&color=00ff40", "0.15s","Logo Angular"),
+    new Icon("Symfony", "https://icongr.am/devicon/symfony-original.svg?size=128&color=00ff40","0.25s", "Logo Symfony"),
+    new Icon("Wordpress", "https://icongr.am/devicon/wordpress-plain.svg?size=128&color=currentColor","0.35s", "Logo Wordpress"),
+    new Icon("PHP", "https://icongr.am/devicon/php-original.svg?size=128&color=00ff40","0.45s", "Logo PHP"),
+    new Icon("HTML5", "https://icongr.am/devicon/html5-original-wordmark.svg?size=128&color=000000","0.55s","Logo HTML5"),
+    new Icon("HTML5", "https://icongr.am/devicon/css3-original-wordmark.svg?size=128&color=000000","0.55s","Logo CSS3"),
+    new Icon("Bootstrap", "https://icongr.am/devicon/bootstrap-plain-wordmark.svg?size=128&color=4d4d9b","0.55s","Logo Bootstrap")
+  ]
 
 
   constructor() { }
