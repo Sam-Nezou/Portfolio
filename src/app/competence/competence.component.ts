@@ -50,14 +50,27 @@ export class CompetenceComponent implements OnInit {
 /*  Tableau contenant les icon pour la partie AudioVisuel*/
 
   audiovisuel_icons:Array<Icon> = [
-    new Icon("AngularJs", "https://icongr.am/devicon/angularjs-original.svg?size=128&color=00ff40", "0.15s","Logo Angular"),
-    new Icon("Symfony", "https://icongr.am/devicon/symfony-original.svg?size=128&color=00ff40","0.25s", "Logo Symfony"),
-    new Icon("Wordpress", "https://icongr.am/devicon/wordpress-plain.svg?size=128&color=currentColor","0.35s", "Logo Wordpress"),
-    new Icon("PHP", "https://icongr.am/devicon/php-original.svg?size=128&color=00ff40","0.45s", "Logo PHP"),
-    new Icon("HTML5", "https://icongr.am/devicon/html5-original-wordmark.svg?size=128&color=000000","0.55s","Logo HTML5"),
-    new Icon("HTML5", "https://icongr.am/devicon/css3-original-wordmark.svg?size=128&color=000000","0.55s","Logo CSS3"),
-    new Icon("Bootstrap", "https://icongr.am/devicon/bootstrap-plain-wordmark.svg?size=128&color=4d4d9b","0.55s","Logo Bootstrap")
+    new Icon("Photophop", "https://icongr.am/simple/adobephotoshop.svg?size=128&color=426ddf&colored=false", "0.15s","Logo Photoshop"),
+    new Icon("Premiere pro", "https://icongr.am/simple/adobepremiere.svg?size=128&color=ff6aff&colored=false","0.25s", "Logo Premiere Pro"),
   ]
+
+
+/*  Tableau contenant les icon pour la partie AudioVisuel*/
+
+BDD_icons:Array<Icon> = [
+  new Icon("MySql", "https://icongr.am/devicon/mysql-original-wordmark.svg?size=128&color=currentColor", "0.15s","Logo MySql"),
+  new Icon("Conception", "https://www.alexandre-thomas.fr/assets/img/icons/skills/cdm.webp","0.25s", "Logo Conception")
+]
+
+
+plus_icons:Array<Icon> = [
+  new Icon("Linux", "https://icongr.am/devicon/linux-original.svg?size=128&color=000000", "0.15s","Logo Linux"),
+  new Icon("STM8", "../../assets/images/icon/STM_icon.png","0.25s", "Logo STM8"),
+  new Icon("FPGA", "../../assets/images/icon/FPGAs_icon.webp","0.35s", "Logo FPGA"),
+  new Icon("Visual Studio Code", ".../../assets/images/icon/vscode_icon.png","0.45s", "Logo VS Code"),
+  new Icon("Suite Office", ".../../assets/images/icon/office_icon.png","0.55s", "Logo Suite Office"),
+]
+
 
 
   constructor() { }
