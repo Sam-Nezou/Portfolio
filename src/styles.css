@@ -9,6 +9,8 @@
     margin: 0;
     padding: 0;
     font-family: 'beba', 'arial', sans-serif;
+    /* color: #b9d7eb; *//*bleu claire */
+    color: #272e37;
   }
 
 
@@ -24,5 +26,7 @@
 }
 
 #contact_panel{
-  background-color: gainsboro;
+  /* background-color: gainsboro; */
+  background-color: #b9d7eb;
+
 }
