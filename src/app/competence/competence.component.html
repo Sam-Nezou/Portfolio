@@ -111,33 +111,10 @@
                 <h1 class="comps wow fadeInLeftBig ">Développement Logiciel</h1>
                 <hr>
                 <div class="row">
-                    <div class="col">
-                        <!-- C -->
-                        <img class="wow bounceInUp" data-wow-delay="0.15s"
-                            src="https://icongr.am/devicon/c-original.svg?size=128&color=00ff40" alt="C Logo">
-                    </div>
-                    <div class="col">
-                        <!-- C++ -->
-                        <img class="wow bounceInUp" data-wow-delay="0.25s"
-                            src="https://icongr.am/devicon/cplusplus-original.svg?size=128&color=00ff40" alt="C++ logo">
-                    </div>
-                    <div class="col">
-                        <!-- Java -->
-                        <img class="wow bounceInUp" data-wow-delay="0.35s"
-                            src="https://icongr.am/devicon/java-original-wordmark.svg?size=128&color=00ff40"
-                            alt="Java Logo">
-                    </div>
-                    <div class="col">
-                        <!-- Python -->
-                        <img class="wow bounceInUp" data-wow-delay="0.45s"
-                            src="https://icongr.am/devicon/python-original.svg?size=128&color=00ff40" alt="Python Logo">
-                    </div>
-                    <div class="col">
-                        <!-- ASM -->
-                        <img class="wow bounceInUp" data-wow-delay="0.55s"
-                            src="https://i.pinimg.com/originals/25/a8/5d/25a85d9e5057430d82273a3c75e73014.png"
-                            alt="Assembler Logo">
-                    </div>
+                    <div *ngFor="let icon of dev_Logi_icons; let i = index"  class="col col-icon">
+                        <img class="wow bounceInUp" [attr.data-wow-delay]="icon.delay" [src]="icon.source" [alt]="icon.alt">
+                        <p>{{icon.name}}</p>
+                    </div>       
                 </div>
             </div>
             <div class="w-100"></div>
@@ -148,47 +125,10 @@
                 <h1 class="comps wow fadeInRightBig ">Développement Web</h1>
                 <hr>
                 <div class="row">
-                    <div class="col">
-                        <!-- Angular -->
-                        <img class="wow bounceInUp" data-wow-delay="0.55s"
-                            src="https://icongr.am/devicon/angularjs-original.svg?size=128&color=00ff40"
-                            alt="Angularjs Logo">
-                    </div>
-                    <div class="col">
-                        <!-- Symfony -->
-                        <img class="wow bounceInUp" data-wow-delay="0.65s"
-                            src="https://icongr.am/devicon/symfony-original.svg?size=128&color=00ff40"
-                            alt="Symfony Logo">
-                    </div>
-                    <div class="col">
-                        <!-- Wordpress -->
-                        <img class="wow bounceInUp" data-wow-delay="0.75s"
-                            src="https://icongr.am/devicon/wordpress-plain.svg?size=128&color=currentColor"
-                            alt="Wordpress Logo">
-                    </div>
-                    <div class="col">
-                        <!-- PHP -->
-                        <img class="wow bounceInUp" data-wow-delay="0.85s"
-                            src="https://icongr.am/devicon/php-original.svg?size=128&color=00ff40" alt="Php Logo">
-                    </div>
-                    <div class="col">
-                        <!-- HTML -->
-                        <img class="wow bounceInUp" data-wow-delay="0.95s"
-                            src="https://icongr.am/devicon/html5-original-wordmark.svg?size=128&color=000000"
-                            alt="Angularjs Logo">
-                    </div>
-                    <div class="col">
-                        <!-- CSS -->
-                        <img class="wow bounceInUp" data-wow-delay="1.05s"
-                            src="https://icongr.am/devicon/css3-original-wordmark.svg?size=128&color=000000"
-                            alt="Symfony Logo">
-                    </div>
-                    <div class="col">
-                        <!-- Bootstrap -->
-                        <img class="wow bounceInUp" data-wow-delay="1.15s"
-                            src="https://icongr.am/devicon/bootstrap-plain-wordmark.svg?size=128&color=4d4d9b"
-                            alt="Bootstrap Logo">
-                    </div>
+                    <div *ngFor="let icon of dev_Web_icons; let i = index"  class="col col-icon">
+                        <img class="wow bounceInUp" [attr.data-wow-delay]="icon.delay" [src]="icon.source" [alt]="icon.alt">
+                        <p>{{icon.name}}</p>
+                    </div>       
                 </div>
             </div>
 
@@ -200,18 +140,10 @@
                 <h1 class="comps wow fadeInLeftBig">Audiovisuel</h1>
                 <hr>
                 <div class="row">
-                    <div class="col">
-                        <!-- Photoshop -->
-                        <img class="wow bounceInUp" data-wow-delay="0.65s" width="128"
-                            src="https://icongr.am/simple/adobephotoshop.svg?size=128&color=426ddf&colored=false"
-                            alt="Photoshop Logo">
-                    </div>
-                    <div class="col">
-                        <!-- Premeire Pro -->
-                        <img class="wow bounceInUp" data-wow-delay="0.75s"
-                            src="https://icongr.am/simple/adobepremiere.svg?size=128&color=ff6aff&colored=false"
-                            alt="Premiere Pro Logo">
-                    </div>
+                    <div *ngFor="let icon of audiovisuel_icons; let i = index"  class="col col-icon">
+                        <img class="wow bounceInUp" [attr.data-wow-delay]="icon.delay" [src]="icon.source" [alt]="icon.alt">
+                        <p>{{icon.name}}</p>
+                    </div>       
                 </div>
             </div>
             <div class="w-100"></div>
@@ -220,18 +152,10 @@
                 <h1 class="comps wow fadeInRightBig">Base de donnée</h1>
                 <hr>
                 <div class="row">
-                    <div class="col">
-                        <!-- MySql -->
-                        <img class="wow bounceInUp" data-wow-delay="0.65s" width="128"
-                            src="https://icongr.am/devicon/mysql-original-wordmark.svg?size=128&color=currentColor"
-                            alt="Photoshop Logo">
-                    </div>
-                    <div class="col">
-                        <!-- Premeire Pro -->
-                        <img class="wow bounceInUp" data-wow-delay="0.75s"
-                            src="https://www.alexandre-thomas.fr/assets/img/icons/skills/cdm.webp"
-                            alt="Premiere Pro Logo">
-                    </div>
+                    <div *ngFor="let icon of BDD_icons; let i = index"  class="col col-icon">
+                        <img class="wow bounceInUp" [attr.data-wow-delay]="icon.delay" [src]="icon.source" [alt]="icon.alt">
+                        <p>{{icon.name}}</p>
+                    </div>       
                 </div>
             </div>
             <div class="w-100"></div>
@@ -240,22 +164,10 @@
                 <h1 class="comps wow fadeInRightBig">Les +</h1>
                 <hr>
                 <div class="row">
-                    <div class="col">
-                        <!-- MySql -->
-                        <img class="wow bounceInUp" data-wow-delay="0.65s"
-                            src="https://icongr.am/devicon/linux-original.svg?size=128&color=000000"
-                            alt="Photoshop Logo">
-                    </div>
-                    <div class="col">
-                        <!-- Visual Studio Code -->
-                        <img class="wow bounceInUp" data-wow-delay="0.75s"
-                            src="../../assets/images/icon/vscode_icon.png" alt="Visual Studio Code Logo">
-                    </div>
-                    <div class="col">
-                        <!-- Suite Office -->
-                        <img class="wow bounceInUp" data-wow-delay="0.75s"
-                            src="../../assets/images/icon/office_icon.png" alt="Suite Office">
-                    </div>
+                    <div *ngFor="let icon of plus_icons; let i = index"  class="col col-icon">
+                        <img class="wow bounceInUp" [attr.data-wow-delay]="icon.delay" [src]="icon.source" [alt]="icon.alt">
+                        <p>{{icon.name}}</p>
+                    </div>       
                 </div>
             </div>
         </div>
