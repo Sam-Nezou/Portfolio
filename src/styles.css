@@ -15,10 +15,21 @@
 
 
   @font-face {
-    font-family: quickSand;
+    font-family: quickSand_oblique;
     src: url(assets/font/Quicksand_Light_Oblique.otf) format("opentype");
   }
-
+  @font-face {
+    font-family: quickSand_bold_oblique;
+    src: url(assets/font/Quicksand_Bold_Oblique.otf) format("opentype");
+  }
+  @font-face {
+    font-family: quickSand;
+    src: url(assets/font/Quicksand_Light.otf) format("opentype");
+  }
+  @font-face {
+    font-family: quickSand_bold;
+    src: url(assets/font/Quicksand_Bold.otf) format("opentype");
+  }
   .panel_title{
     text-align: center;
     font-size: clamp(16px, 10vw, 100px);
