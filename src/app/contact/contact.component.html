@@ -5,16 +5,37 @@
 
     <div class="container">
         <div id="coord_data">
-            <div>
-                <p id="email">
-                <img src="../../assets/images/icon/mail.png" alt="Mail Logo">
-                {{email_isen}}</p>
-            </div>
+            <div class="row">
+                <div class="col">
+                    <p id="email">
+                        <img class="contact_icon" src="../../assets/images/icon/contact/enveloppe.png" alt="Mail Logo">
+                        {{email_isen}}</p>
+                </div>
+                <div class="col">
+                    <a href='https://www.linkedin.com/in/samuel-nezou/'>
+                        <img id="QrCodeLink"
+                            src='../../assets/images/icon/contact/output-onlinepngtools.png' alt='QR Code' /></a>
+                </div>
+                <div class="w-100"></div>
+                <div class="col">
 
-            <br>
-            <p id="phone">{{phone_number}}</p>
-            <br>
-            <p id="localisation">{{localisation}}</p>
+                    <p id="phone">
+                        <img class="contact_icon" src="../../assets/images/icon/contact/telephone-intelligent.png" alt="">
+                        {{phone_number}}</p>
+                </div>
+
+
+                
+
+
+                <p id="localisation">
+                    <img class="contact_icon" src="../../assets/images/icon/contact/espace-reserve.png" alt="">
+                    {{localisation}}</p>
+
+
+
+
+            </div>
 
         </div>
 

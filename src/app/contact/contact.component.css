@@ -5,6 +5,12 @@
 }
 
 
-#coord_data img{
-    width: 25px;
+.contact_icon{
+    width: 70px;
 }
+
+#QrCodeLink{
+    width: 270px;
+    position: absolute;
+}
+

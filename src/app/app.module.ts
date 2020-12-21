@@ -8,13 +8,15 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { CompetenceComponent } from './competence/competence.component';
 import { NgwWowModule } from 'ngx-wow';
 import { ContactComponent } from './contact/contact.component';
+import { LicenseComponent } from './license/license.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SliderComponent,
     CompetenceComponent,
-    ContactComponent
+    ContactComponent,
+    LicenseComponent
   ],
   imports: [
     BrowserModule,
