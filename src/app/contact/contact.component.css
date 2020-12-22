@@ -1,42 +1,52 @@
-#coord_data p{
-
+#coord_data p {
     font-family: quickSand_bold;
-    font-size: clamp(24px, 10vw, 26px);
-    text-align: center;
+    font-size: clamp(3px, 4vw, 26px);
 }
 
-
-.contact_icon{
+.contact_icon {
     max-width: 70px;
-    min-width: 50px;
+    min-width: 20px;
+}
+
+#email a {
+    text-decoration: none;
+    color: #272e37;
+}
+
+#email a:hover {
+    animation: up-effect 1s;
 }
 
 
-#QrCodeLink{
-   margin-left: auto;
-   margin-right: auto;
-   text-align: center;
-}
+/* Taille Smartphone */
 
-
-@media only screen and (max-width:800px){
-     
-    .large-panel{
+@media only screen and (max-width:800px) {
+    .large-panel {
         display: none;
     }
+    #coord_data p {
+        text-align: center;
+    }
+    #QrCodeLink {
+        width: 100px;
+        display: block;
+        margin: auto;
+    }
+    .contact_icon {
+        width: 35px;
+    }
 }
-    
+
+
 /* Taille Page web */
 
-@media only screen and (min-width:800px){
-
-    .small-panel{
+@media only screen and (min-width:800px) {
+    .small-panel {
         display: none;
-        margin-left: auto;
-        margin-right: auto;
     }
-   
-    
-
-    
+    #QrCodeLink {
+        width: 250px;
+        display: block;
+        margin: auto;
+    }
 }

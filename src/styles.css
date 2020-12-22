@@ -1,43 +1,58 @@
 /* You can add global styles to this file, and also import other style files */
+
 @font-face {
     font-family: beba;
     src: url(assets/font/Bebas-Regular.otf) format("opentype");
-  }
+}
 
-  * {
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     font-family: 'beba', 'arial', sans-serif;
-    /* color: #b9d7eb; *//*bleu claire */
+    /* color: #b9d7eb; */
+    /*bleu claire */
     color: #272e37;
-  }
+}
 
-
-  @font-face {
+@font-face {
     font-family: quickSand_oblique;
     src: url(assets/font/Quicksand_Light_Oblique.otf) format("opentype");
-  }
-  @font-face {
+}
+
+@font-face {
     font-family: quickSand_bold_oblique;
     src: url(assets/font/Quicksand_Bold_Oblique.otf) format("opentype");
-  }
-  @font-face {
+}
+
+@font-face {
     font-family: quickSand;
     src: url(assets/font/Quicksand_Light.otf) format("opentype");
-  }
-  @font-face {
+}
+
+@font-face {
     font-family: quickSand_bold;
     src: url(assets/font/Quicksand_Bold.otf) format("opentype");
-  }
-  .panel_title{
+}
+
+.panel_title {
     text-align: center;
     font-size: clamp(16px, 10vw, 100px);
     margin-bottom: 5%;
 }
 
-#contact_panel{
-  /* background-color: gainsboro; */
-  background-color: #b9d7eb;
+#contact_panel {
+    /* background-color: gainsboro; */
+    background-color: #b9d7eb;
+}
 
+
+/*  Aniamtion */
+
+.grown {
+    transition: all .2s ease-in-out;
+}
+
+.grown:hover {
+    transform: scale(1.4);
 }

@@ -17,5 +17,4 @@ export class ContactComponent implements OnInit {
   email_isen = " samuel.nezou@isen-ouest.yncrea.fr"
   localisation = "Brest, Bretagne"
   
-
 }
