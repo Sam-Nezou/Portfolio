@@ -1,8 +1,26 @@
-<h1> Licenses</h1>
+<h1> LICENCES</h1>
 <hr>
+<div class="card">
+    <div class="card-header">
+        Licence Icon
+    </div>
 
-<div class="card-body">
-    <div *ngFor="let licenseUser of LicenseUsers;"> - Icônes conçues par
-        <a href={{licenseUser.authorSource}} title={{licenseUser.author}}>{{licenseUser.author}}</a> from <a href={{licenseUser.siteSource}} title={{licenseUser.site}}>{{licenseUser.site}}</a>
+    <div class="card-body">
+        <div *ngFor="let licenseUser of IconLicenses;"> - Icônes conçues par
+            <a href={{licenseUser.authorSource}} title={{licenseUser.author}}>{{licenseUser.author}}</a> from <a href={{licenseUser.siteSource}} title={{licenseUser.site}}>{{licenseUser.site}}</a>
+        </div>
+    </div>
+</div>
+<br>
+
+<div class="card">
+    <div class="card-header">
+        Licence Font
+    </div>
+
+    <div class="card-body">
+        <div *ngFor="let licenseUser of FontLicenses;"> - Fonts conçues par
+            <a href={{licenseUser.authorSource}} title={{licenseUser.author}}>{{licenseUser.author}}</a> from <a href={{licenseUser.siteSource}} title={{licenseUser.site}}>{{licenseUser.site}}</a>
+        </div>
     </div>
 </div>
