@@ -1,4 +1,4 @@
-#coord_data p {
+#coord_data * {
     font-family: quickSand_bold;
     font-size: clamp(3px, 4vw, 26px);
 }
