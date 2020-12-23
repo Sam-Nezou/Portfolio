@@ -13,10 +13,6 @@
     color: #272e37;
 }
 
-#email a:hover {
-    animation: up-effect 1s;
-}
-
 
 /* Taille Smartphone */
 
@@ -31,6 +27,7 @@
         width: 100px;
         display: block;
         margin: auto;
+        margin-bottom: 10px;
     }
     .contact_icon {
         width: 35px;
@@ -45,8 +42,9 @@
         display: none;
     }
     #QrCodeLink {
-        width: 250px;
+        width: 150px;
         display: block;
         margin: auto;
+        padding-top: 10%;
     }
 }

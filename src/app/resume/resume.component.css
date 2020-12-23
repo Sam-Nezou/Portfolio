@@ -1,0 +1,19 @@
+body {
+    background-color: #b9d7eb;
+}
+
+.profile_img {
+    display: inline-block;
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    border: 10px solid #272e37;
+    margin: auto;
+    margin-bottom: 23px;
+    -webkit-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 1);
+    -moz-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 1);
+    box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 1);
+}

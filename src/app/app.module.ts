@@ -11,7 +11,8 @@ import { ContactComponent } from './contact/contact.component';
 import { LicenseComponent } from './license/license.component';
 import { FooterComponent } from './footer/footer.component';
 import { MatDialogModule} from '@angular/material/dialog';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ResumeComponent } from './resume/resume.component'
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
     CompetenceComponent,
     ContactComponent,
     LicenseComponent,
-    FooterComponent
+    FooterComponent,
+    ResumeComponent
   ],
   imports: [
     BrowserModule,
