@@ -18,6 +18,8 @@ export class ResumeComponent implements OnInit {
   ngOnInit(): void {
   }
 
+
+  
   open(content) {
     this.modalService.open(content, {size:'xl'});
   }
