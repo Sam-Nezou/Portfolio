@@ -9,6 +9,10 @@ import { CompetenceComponent } from './competence/competence.component';
 import { NgwWowModule } from 'ngx-wow';
 import { ContactComponent } from './contact/contact.component';
 import { LicenseComponent } from './license/license.component';
+import { FooterComponent } from './footer/footer.component';
+import { MatDialogModule} from '@angular/material/dialog';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
+
 
 @NgModule({
   declarations: [
@@ -16,15 +20,23 @@ import { LicenseComponent } from './license/license.component';
     SliderComponent,
     CompetenceComponent,
     ContactComponent,
-    LicenseComponent
+    LicenseComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgbModule,
-    NgwWowModule
+    NgwWowModule,
+    MatDialogModule,
+    BrowserAnimationsModule
+  ],
+  exports:[
+    MatDialogModule
+
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  entryComponents:[LicenseComponent]
 })
 export class AppModule { }
