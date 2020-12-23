@@ -36,7 +36,6 @@ export class LicenseComponent implements OnInit {
 
   IconLicenses : Array<LicenseUser> = [
     new LicenseUser("Freepik","https://www.flaticon.com/fr/auteurs/freepik","https://www.flaticon.com","www.flaticon.com"),
-    new LicenseUser("Freepik","https://www.flaticon.com/fr/auteurs/freepik","https://www.flaticon.com","www.flaticon.com")
   ]
 
   FontLicenses : Array<LicenseUser> = [
