@@ -1,5 +1,5 @@
 body {
-    background-color: #b9d7eb;
+    /* margin-bottom: 50px; */
 }
 
 .profile_img {
@@ -16,4 +16,18 @@ body {
     -webkit-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 1);
     -moz-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 1);
     box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 1);
+}
+
+.iconButton {
+    width: 65px;
+    cursor: pointer;
+    margin-right: 50px;
+}
+
+.col>h1 {
+    text-decoration: underline;
+}
+
+.col>p {
+    font-family: quickSand_bold;
 }

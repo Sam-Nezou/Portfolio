@@ -1,10 +1,4 @@
-<body>
-
-
-
-
-
-
+<body class="blueBg">
 
     <h1 class="panel_title ">Résumé</h1>
 
@@ -19,6 +13,19 @@
             <div class="col ">
                 <h1>Description</h1>
                 <p>{{text_resume}}</p>
+
+                <br>
+                <div class="row text-center">
+
+                    <div class="col">
+                        <img class="iconButton grown" src="../../assets/images/icon/cv.png" (click)="open(content)" alt="">
+
+
+                        <a href='https://www.linkedin.com/in/samuel-nezou/'>
+                            <img class="iconButton grown" src='../../assets/images/icon/contact/linkedin.png' alt='QR Code' /></a>
+
+                    </div>
+                </div>
             </div>
 
         </div>
@@ -26,6 +33,21 @@
 
     </div>
 
-
-
 </body>
+
+<ng-template #content>
+    <div class="modal-header">
+        <h4 class="modal-title" id="modal-basic-title">CV</h4>
+    </div>
+    <div class="modal-body text-center ">
+        <img src="../../assets/images/icon/CV.jpeg" alt="CV" style="width: 1000px;">
+    </div>
+    <div class="modal-footer">
+
+        <form action="../../assets/images/icon/CV.jpeg" method="GET">
+            <button type="button" class="btn btn-outline-dark" (click)="modal.close('Save click')">Télécharger PDF</button>
+
+        </form>
+
+    </div>
+</ng-template>
