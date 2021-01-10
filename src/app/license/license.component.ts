@@ -42,4 +42,9 @@ export class LicenseComponent implements OnInit {
     new LicenseUser("MadeType","https://www.behance.net/madetype","https://www.dafont.com/fr/made-tommy.font","www.dafont.com"),
   ]
 
+  DesignLicenses : Array<LicenseUser> = [
+    new LicenseUser("Hassan Kamal","https://codepen.io/hassan-kamal/pen/NNvYEQ","https://codepen.io/","www.codepen.io"),
+  ]
+
+
 }

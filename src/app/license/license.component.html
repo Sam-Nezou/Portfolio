@@ -21,7 +21,19 @@
     </div>
 
     <div class="card-body">
-        <div *ngFor="let licenseUser of FontLicenses;"> - Fonts conçues par
+        <div *ngFor="let licenseUser of FontLicenses;"> - Font conçues par
+            <a href={{licenseUser.authorSource}} title={{licenseUser.author}}>{{licenseUser.author}}</a> from <a href={{licenseUser.siteSource}} title={{licenseUser.site}}>{{licenseUser.site}}</a>
+        </div>
+    </div>
+</div>
+<br>
+<div class="card text-center">
+    <div class="card-header">
+        Design Font
+    </div>
+
+    <div class="card-body">
+        <div *ngFor="let licenseUser of DesignLicenses;"> - Design conçue par
             <a href={{licenseUser.authorSource}} title={{licenseUser.author}}>{{licenseUser.author}}</a> from <a href={{licenseUser.siteSource}} title={{licenseUser.site}}>{{licenseUser.site}}</a>
         </div>
     </div>

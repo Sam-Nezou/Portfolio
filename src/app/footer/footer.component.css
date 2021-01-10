@@ -1,16 +1,16 @@
 * {
     font-family: quickSand_bold;
+    color: white;
 }
 
 body {
-    background-color: #b9d7eb;
+    /* background-color: #b9d7eb; */
     text-align: center;
     height: 50px;
 }
 
 button {
     margin-right: 20px;
-    color: #272e37;
     background: none;
     border: none;
     padding: 0;

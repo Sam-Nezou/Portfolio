@@ -1,0 +1,32 @@
+<div class="blueBg">
+
+    <h1 class="panel_title ">Exéprience</h1>
+
+
+
+
+
+    <div class="container">
+
+        <div class="wow fadeIn timeline-block timeline-block-right" *ngFor="let experience of experiences; ">
+            <!-- <div class="marker"> -->
+            <img src="{{experience.iconSrc}}" alt="">
+            <!-- </div> -->
+            <div class="timeline-content">
+                <h3>{{experience.date}}</h3>
+                <span>{{experience.title}}</span>
+
+                <p>
+                    {{experience.description}}
+                </p>
+
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+</div>
