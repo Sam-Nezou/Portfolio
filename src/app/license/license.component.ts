@@ -43,7 +43,7 @@ export class LicenseComponent implements OnInit {
   ]
 
   DesignLicenses : Array<LicenseUser> = [
-    new LicenseUser("Hassan Kamal","https://codepen.io/hassan-kamal/pen/NNvYEQ","https://codepen.io/","www.codepen.io"),
+    new LicenseUser("Brady Wright","https://codepen.io/brady_wright/pen/NNOvrW","https://codepen.io/","www.codepen.io"),
   ]
 
 

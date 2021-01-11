@@ -22,6 +22,7 @@
     "@angular/platform-browser": "~11.0.4",
     "@angular/platform-browser-dynamic": "~11.0.4",
     "@angular/router": "~11.0.4",
+    "@material/dialog": "^9.0.0",
     "@ng-bootstrap/ng-bootstrap": "^8.0.0",
     "animate.css": "^4.1.1",
     "bootstrap": "^5.0.0-beta1",

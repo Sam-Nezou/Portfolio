@@ -1,5 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
 
+:root {
+    --blueLightColor: #b9d7eb;
+    --blueDarkColor: #272e37;
+}
+
 @font-face {
     font-family: beba;
     src: url(assets/font/Bebas-Regular.otf) format("opentype");
@@ -43,7 +48,7 @@
 .panel_title {
     text-align: center;
     font-size: clamp(16px, 10vw, 60px);
-    margin-bottom: 5%;
+    margin-bottom: 1.5%;
     padding-top: 30px;
 }
 
@@ -69,9 +74,15 @@ body {
 }
 
 .blueBg {
-    background-color: #b9d7eb;
+    /*background: linear-gradient(var(--blueLightColor), 95%, white);
+*/
+    background: var(--blueLightColor);
+}
+
+.whiteBg {
+    background: linear-gradient(var(--blueLightColor), 10%, white, 90%, var(--blueLightColor));
 }
 
 .darkBg {
-    background-color: #272e37;
+    background-color: var(--blueDarkColor);
 }

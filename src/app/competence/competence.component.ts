@@ -67,7 +67,7 @@ export class CompetenceComponent implements OnInit {
   plus_icons: Array<Icon> = [
     new Icon("Linux", "https://icongr.am/devicon/linux-original.svg?size=128&color=000000", "0.15s", "Logo Linux"),
     new Icon("STM8", "../../assets/images/icon/STM_icon.png", "0.25s", "Logo STM8"),
-    new Icon("FPGA", "../../assets/images/icon/FPGAs_icon.webp", "0.35s", "Logo FPGA"),
+    new Icon("FPGA", "../../assets/images/icon/FPGAs_icon.png", "0.35s", "Logo FPGA"),
     new Icon("Visual Studio Code", ".../../assets/images/icon/vscode_icon.png", "0.45s", "Logo VS Code"),
     new Icon("Suite Office", ".../../assets/images/icon/office_icon.png", "0.55s", "Logo Suite Office"),
   ]
