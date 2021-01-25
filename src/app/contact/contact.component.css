@@ -1,25 +1,27 @@
+body {
+    margin-bottom: 25px;
+}
+
 #coord_data * {
     font-family: quickSand_bold;
     font-size: clamp(3px, 4vw, 26px);
 }
 
 .contact_icon {
-    max-width: 70px;
+    max-width: 50px;
     min-width: 20px;
 }
 
 #email a {
     text-decoration: none;
     color: #272e37;
+    padding-left: 5px;
 }
 
 
 /* Taille Smartphone */
 
 @media only screen and (max-width:800px) {
-    .large-panel {
-        display: none;
-    }
     #coord_data p {
         text-align: center;
     }
@@ -29,22 +31,18 @@
         margin: auto;
         margin-bottom: 10px;
     }
-    .contact_icon {
-        width: 35px;
-    }
+    .contact_icon {}
 }
 
 
 /* Taille Page web */
 
 @media only screen and (min-width:800px) {
-    .small-panel {
-        display: none;
-    }
     #QrCodeLink {
         width: 150px;
         display: block;
         margin: auto;
         padding-top: 10%;
     }
+    .contact_icon {}
 }

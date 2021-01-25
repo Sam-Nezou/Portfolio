@@ -1,57 +1,36 @@
-<body>
+<body class="container mx-auto">
 
     <h1 class="panel_title">Me Contacter</h1>
+    <!--   Email  -->
+    <div id="coord_data" class="grid md:grid-rows-3 md:grid-flow-col px-10 gap-4 ">
+        <div class="col-span ">
 
+            <p id="email" class="grown ">
+                <a href="mailto:samuel.nezou@isen-ouest.yncrea.fr">
+                    <img class=" contact_icon md:float-left  mx-auto align-text-top" src="../../assets/images/icon/contact/enveloppe.png" alt="Mail Logo"> {{email_isen}}
+                </a>
+            </p>
+        </div>
 
-    <div class="container ">
-        <div id="coord_data">
-            <div class="row ">
-                <div class="col justify-content-md-center">
+        <!-- Phone  -->
+        <div class="col-span ">
+            <p id="phone" class="grown ">
+                <img class="contact_icon md:float-left  mx-auto align-text-top" src="../../assets/images/icon/contact/telephone-intelligent.png" alt=""> {{phone_number}}
+            </p>
+        </div>
+        <!--  Localisation  -->
+        <div class=" col-span   container mx-auto  grown">
+            <img class="  contact_icon md:float-left  mx-auto align-text-top" src="../../assets/images/icon/contact/espace-reserve.png" alt="">
+            <p class=" col-start-2 " id="localisation">
+                {{localisation}}
+            </p>
 
-                    <div class="row">
+        </div>
+        <div class="md:row-span-2">
+            <a href='https://www.linkedin.com/in/samuel-nezou/'>
 
-                        <div class="col small-panel ">
-                            <a href='https://www.linkedin.com/in/samuel-nezou/'>
-
-                                <img id="QrCodeLink" class="grown" src='../../assets/images/icon/contact/linkedin.png' alt='QR Code' />
-                            </a>
-                        </div>
-
-                        <div class="w-100"></div>
-
-                        <div class="col">
-                            <p id="email" class="grown">
-
-                                <a href="mailto:samuel.nezou@isen-ouest.yncrea.fr">
-                                    <img class="contact_icon" src="../../assets/images/icon/contact/enveloppe.png" alt="Mail Logo"> {{email_isen}}
-                                </a>
-                            </p>
-                        </div>
-
-                        <div class="w-100"></div>
-                        <div class="col">
-
-                            <p id="phone" class="grown">
-                                <img class="contact_icon" src="../../assets/images/icon/contact/telephone-intelligent.png" alt=""> {{phone_number}}
-                            </p>
-                        </div>
-
-                        <p id="localisation" class="grown">
-                            <img class="contact_icon" src="../../assets/images/icon/contact/espace-reserve.png" alt=""> {{localisation}}
-                        </p>
-                    </div>
-
-                </div>
-                <div class="col large-panel grown">
-
-                    <a href='https://www.linkedin.com/in/samuel-nezou/'>
-                        <img id="QrCodeLink" src='../../assets/images/icon/contact/linkedin.png' alt='QR Code' /></a>
-
-                </div>
-
-            </div>
-            <br>
-            <br>
+                <img id="QrCodeLink" class="grown md:float-left " src='../../assets/images/icon/contact/linkedin.png' alt='QR Code' />
+            </a>
         </div>
 
     </div>

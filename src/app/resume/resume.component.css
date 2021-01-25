@@ -1,7 +1,6 @@
 .profile_img {
     --size: 350px;
     width: var(--size);
-    height: var(--size);
     border-radius: 50%;
     background-repeat: no-repeat;
     background-position: center center;
@@ -26,8 +25,4 @@
 
 .col>p {
     font-family: quickSand_bold;
-}
-
-body {
-    margin-bottom: 100px;
 }

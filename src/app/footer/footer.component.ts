@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { MatDialog, MatDialogConfig} from '@angular/material/dialog'
+import { MatDialog, MatDialogConfig} from '@angular/material/dialog';
 import { LicenseComponent } from '../license/license.component';
  
 @Component({

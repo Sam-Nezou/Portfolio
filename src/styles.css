@@ -5,6 +5,10 @@
     --blueDarkColor: #272e37;
 }
 
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+@import 'tailwindcss/screen';
 @font-face {
     font-family: beba;
     src: url(assets/font/Bebas-Regular.otf) format("opentype");
@@ -60,7 +64,7 @@
 }
 
 .grown:hover {
-    transform: scale(1.4);
+    transform: scale(1.1);
 }
 
 html,

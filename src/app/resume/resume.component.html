@@ -1,32 +1,34 @@
-<body class="blueBg">
+<body class="blueBg mx-auto">
 
     <h1 class="panel_title ">Résumé</h1>
 
-    <div class="container">
-        <div class="row">
-            <!-- Div Image -->
-            <div class="col text-center">
-                <img class="profile_img " src={{imgSource}} alt="">
+    <div class="grid md:grid-cols-5 grid-cols-3 ">
 
-            </div>
-
-            <div class="col ">
-                <h1>Description</h1>
-                <p>{{text_resume}}</p>
-
-                <br>
-                <div class="row text-center">
-                    <div class="col">
-                        <img class="iconButton grown" src="../../assets/images/icon/cv.png" (click)="open(content)" alt="">
-
-                        <a href='https://www.linkedin.com/in/samuel-nezou/'>
-                            <img class="iconButton grown" src='../../assets/images/icon/contact/linkedin.png' alt='QR Code' /></a>
-
-                    </div>
-                </div>
-            </div>
+        <!-- Div Image -->
+        <div class="md:col-start-2  md:col-span-1 col-span-3 px-4 text-center">
+            <img class="profile_img " src={{imgSource}} alt="">
 
         </div>
+
+        <div class="md:col-span-2  col  col-start-1 px-4 col-span-3 ">
+            <h1 class="bg-blueDarkColor-100">Description</h1>
+            <p>{{text_resume}}</p>
+
+            <br>
+            <div class="grid grid-cols-5 ">
+                <!-- Bouton CV -->
+                <div class="col-start-2 lg:col-start-1">
+                    <img class="iconButton grown " (click)="onCreate()" src="../../assets/images/icon/cv.png" alt="">
+                </div>
+                <div class="col-start-4 lg:col-start-2">
+                    <a href='https://www.linkedin.com/in/samuel-nezou/'>
+                        <img class="iconButton grown" src='../../assets/images/icon/contact/linkedin.png' alt='QR Code' /></a>
+
+                </div>
+            </div>
+        </div>
+
+
     </div>
 </body>
 <!-- Fenètre CV -->

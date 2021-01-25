@@ -3,174 +3,81 @@
     <h1 class="panel_title">Mes Compétences</h1>
 
 
-    <div class="container">
 
 
-        <!-- ----------------------------------------------------------------------------------------------------------- -->
-        <!--------------- Affichage des sections sur plus grand ecran ------------------------------------------------>
-        <!-- ----------------------------------------------------------------------------------------------------------- -->
+    <!-- ----------------------------------------------------------------------------------------------------------- -->
+    <!--------------- Affichage des sections sur plus grand ecran ------------------------------------------------>
+    <!-- ----------------------------------------------------------------------------------------------------------- -->
+
+    <div class="lg:grid grid-cols-6  lg:divide-blueDarkColor-300   lg:divide-x gap-4">
+
+        <!------------------- Langage de Programmation -->
+        <div class=" prog-panel  lg:col-start-2 lg:col-span-2">
 
 
+            <h1 class="comps wow fadeInLeftBig ">Développement Logiciel</h1>
+            <div class="row grid grid-cols-3  gap-2">
 
+                <div *ngFor="let icon of dev_Logi_icons; let i = index" class="col col-icon">
 
-        <div class="row">
+                    <img class="wow fadeIn" [attr.data-wow-delay]="icon.delay" [src]="icon.source" [alt]="icon.alt">
+                    <p>{{icon.name}}</p>
+                </div>
 
-
+            </div>
         </div>
 
+        <!-------------------- Dev Web -->
 
-        <div class="row large-panel">
+        <div class="col lg:col-span-2 ">
 
-            <!------------------- Langage de Programmation -->
-
-            <div class="col prog-panel">
-
-                <h1 class="comps wow fadeInLeftBig ">Développement Logiciel</h1>
-                <hr>
-                <div class="row">
-
-                    <div *ngFor="let icon of dev_Logi_icons; let i = index" class="col col-icon">
-
-                        <img class="wow fadeIn" [attr.data-wow-delay]="icon.delay" [src]="icon.source" [alt]="icon.alt">
-                        <p>{{icon.name}}</p>
-                    </div>
-
-                </div>
-            </div>
-
-            <!-------------------- Dev Web -->
-
-            <div class="col">
-
-                <h1 class="comps wow fadeInRightBig ">Développement Web</h1>
-                <hr>
-                <div class="row">
-                    <div *ngFor="let icon of dev_Web_icons; let i = index" class="col col-icon">
-                        <img class="wow fadeIn" [attr.data-wow-delay]="icon.delay" [src]="icon.source" [alt]="icon.alt">
-                        <p>{{icon.name}}</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="w-100"> </div>
-
-            <!-------------------- AudioVisuel -->
-
-            <div class="col prog-panel">
-                <h1 class="comps wow fadeInLeftBig">Audiovisuel</h1>
-                <hr>
-                <div class="row">
-                    <div *ngFor="let icon of audiovisuel_icons; let i = index" class="col col-icon">
-                        <img class="wow fadeIn" [attr.data-wow-delay]="icon.delay" [src]="icon.source" [alt]="icon.alt">
-                        <p>{{icon.name}}</p>
-                    </div>
-
-                </div>
-            </div>
-            <!-------------------- BDD -->
-            <div class="col large-panel">
-                <h1 class="comps wow fadeInRightBig">Base de données</h1>
-                <hr>
-                <div class="row">
-
-
-                    <div *ngFor="let icon of BDD_icons; let i = index" class="col col-icon">
-                        <img class="wow fadeIn" [attr.data-wow-delay]="icon.delay" [src]="icon.source" [alt]="icon.alt">
-                        <p>{{icon.name}}</p>
-                    </div>
-
-                </div>
-            </div>
-            <div class="w-100"></div>
-            <!--------------------- Les Plus + -->
-            <div class="col">
-                <h1 class="comps wow fadeInRightBig">Les +</h1>
-                <hr>
-                <div class="row">
-
-                    <div *ngFor="let icon of plus_icons; let i = index" class="col col-icon">
-                        <img class="wow fadeIn" [attr.data-wow-delay]="icon.delay" [src]="icon.source" [alt]="icon.alt">
-                        <p>{{icon.name}}</p>
-                    </div>
-
+            <h1 class="comps wow fadeInRightBig ">Développement Web</h1>
+            <div class="row grid grid-cols-4 gap-4 lg:grid-cols-5">
+                <div *ngFor="let icon of dev_Web_icons; let i = index" class="col col-icon">
+                    <img class="wow fadeIn" [attr.data-wow-delay]="icon.delay" [src]="icon.source" [alt]="icon.alt">
+                    <p>{{icon.name}}</p>
                 </div>
             </div>
         </div>
 
 
-        <!-- ----------------------------------------------------------------------------------------------------------- -->
-        <!--------------- Affichage des sections sur plus petit ecran ------------------------------------------------>
-        <!-- ----------------------------------------------------------------------------------------------------------- -->
 
+        <!-------------------- AudioVisuel -->
 
-        <div class="row small-panel">
-
-            <!-- Langage de Programmation -->
-
-            <div class="col prog-panel">
-                <h1 class="comps wow fadeInLeftBig ">Développement Logiciel</h1>
-                <hr>
-                <div class="row">
-                    <div *ngFor="let icon of dev_Logi_icons; let i = index" class="col col-icon">
-                        <img class="wow fadeIn" [attr.data-wow-delay]="icon.delay" [src]="icon.source" [alt]="icon.alt">
-                        <p>{{icon.name}}</p>
-                    </div>
+        <div class="col prog-panel lg:col-start-1 lg:col-span-2">
+            <h1 class="comps wow fadeInLeftBig">Audiovisuel</h1>
+            <div class="row grid grid-cols-2 gap-2">
+                <div *ngFor="let icon of audiovisuel_icons; let i = index" class="col col-icon">
+                    <img class="wow fadeIn" [attr.data-wow-delay]="icon.delay" [src]="icon.source" [alt]="icon.alt">
+                    <p>{{icon.name}}</p>
                 </div>
-            </div>
-            <div class="w-100"></div>
-            <!-- Dev Web -->
 
-            <div class="col">
-
-                <h1 class="comps wow fadeInRightBig ">Développement Web</h1>
-                <hr>
-                <div class="row">
-                    <div *ngFor="let icon of dev_Web_icons; let i = index" class="col col-icon">
-                        <img class="wow fadeIn" [attr.data-wow-delay]="icon.delay" [src]="icon.source" [alt]="icon.alt">
-                        <p>{{icon.name}}</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="w-100"> </div>
-
-            <!-- AudioVisuel -->
-
-            <div class="col prog-panel">
-                <h1 class="comps wow fadeInLeftBig">Audiovisuel</h1>
-                <hr>
-                <div class="row">
-                    <div *ngFor="let icon of audiovisuel_icons; let i = index" class="col col-icon">
-                        <img class="wow fadeIn" [attr.data-wow-delay]="icon.delay" [src]="icon.source" [alt]="icon.alt">
-                        <p>{{icon.name}}</p>
-                    </div>
-                </div>
-            </div>
-            <div class="w-100"></div>
-            <!-- BDD -->
-            <div class="col ">
-                <h1 class="comps wow fadeInRightBig">Base de données</h1>
-                <hr>
-                <div class="row">
-                    <div *ngFor="let icon of BDD_icons; let i = index" class="col col-icon">
-                        <img class="wow fadeIn" [attr.data-wow-delay]="icon.delay" [src]="icon.source" [alt]="icon.alt">
-                        <p>{{icon.name}}</p>
-                    </div>
-                </div>
-            </div>
-            <div class="w-100"></div>
-            <!-- Les Plus + -->
-            <div class="col">
-                <h1 class="comps wow fadeInRightBig">Les +</h1>
-                <hr>
-                <div class="row">
-                    <div *ngFor="let icon of plus_icons; let i = index" class="col col-icon">
-                        <img class="wow fadeIn" [attr.data-wow-delay]="icon.delay" [src]="icon.source" [alt]="icon.alt">
-                        <p>{{icon.name}}</p>
-                    </div>
-                </div>
             </div>
         </div>
+        <!-------------------- BDD -->
+        <div class="col lg:col-span-2">
+            <h1 class="comps wow fadeInRightBig">Base de données</h1>
+            <div class="row grid grid-cols-2 gap-4">
 
+
+                <div *ngFor="let icon of BDD_icons; let i = index" class="col col-icon">
+                    <img class="wow fadeIn" [attr.data-wow-delay]="icon.delay" [src]="icon.source" [alt]="icon.alt">
+                    <p>{{icon.name}}</p>
+                </div>
+
+            </div>
+        </div>
+        <!--------------------- Les Plus + -->
+        <div class="col lg:col-span-2">
+            <h1 class="comps wow fadeInRightBig">Les +</h1>
+            <div class="row grid grid-cols-5 gap-4">
+
+                <div *ngFor="let icon of plus_icons; let i = index" class="col col-icon">
+                    <img class="wow fadeIn" [attr.data-wow-delay]="icon.delay" [src]="icon.source" [alt]="icon.alt">
+                    <p>{{icon.name}}</p>
+                </div>
+
+            </div>
+        </div>
     </div>
 </div>

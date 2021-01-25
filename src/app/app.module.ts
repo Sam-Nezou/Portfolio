@@ -4,7 +4,7 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SliderComponent } from './slider/slider.component';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+//import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { CompetenceComponent } from './competence/competence.component';
 import { NgwWowModule } from 'ngx-wow';
 import { ContactComponent } from './contact/contact.component';
@@ -13,7 +13,9 @@ import { FooterComponent } from './footer/footer.component';
 import { MatDialogModule} from '@angular/material/dialog';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ResumeComponent } from './resume/resume.component';
-import { ExperienceComponent } from './experience/experience.component'
+import { ExperienceComponent } from './experience/experience.component';
+import { ProjectComponent } from './project/project.component';
+import { CvDialogComponent } from './cv-dialog/cv-dialog.component'
 
 
 @NgModule({
@@ -25,12 +27,14 @@ import { ExperienceComponent } from './experience/experience.component'
     LicenseComponent,
     FooterComponent,
     ResumeComponent,
-    ExperienceComponent
+    ExperienceComponent,
+    ProjectComponent,
+    CvDialogComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule,
+//    NgbModule,
     NgwWowModule,
     MatDialogModule,
     BrowserAnimationsModule
