@@ -23,7 +23,7 @@
         "@angular/platform-browser-dynamic": "~11.0.4",
         "@angular/router": "~11.0.4",
         "@material/dialog": "^9.0.0",
-        "@ngneat/tailwind": "^5.2.3",
+        "@ngneat/tailwind": "^5.2.4",
         "animate.css": "^4.1.1",
         "jquery": "^3.5.1",
         "ngx-build-plus": "^11.0.0",

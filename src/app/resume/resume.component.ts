@@ -25,9 +25,7 @@ export class ResumeComponent implements OnInit {
   onCreate(){
     const dialogConfig = new MatDialogConfig();
 
-    dialogConfig.height = '1000';
-    dialogConfig.maxHeight = '1000';
-
+   
     this.dialog.open(CvDialogComponent,dialogConfig);
   }
 }
