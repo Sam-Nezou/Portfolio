@@ -5,3 +5,7 @@ p {
 .inline {
     font-family: quickSand_bold;
 }
+
+h1 {
+    width: 100px;
+}

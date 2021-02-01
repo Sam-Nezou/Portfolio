@@ -33,8 +33,7 @@ export class ExperienceComponent implements OnInit {
   ngOnInit(): void {
   }
 
-
-  todayDate = new Date();
+todayDate =new Date();
 
 
   formations: Array<Experience> = [

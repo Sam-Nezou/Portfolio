@@ -1,36 +1,48 @@
-<div class="container mx-auto cursor-pointer ">
+<div class="grid md:grid-cols-3 mx-auto container">
 
 
-    <div class="w-full lg:w-1/2  md:px-4 lg:px-6 py-5 transform duration-500 lg:hover:-translate-y-1 lg:hover:scale-110">
-        <div class=" shadow-xl  hover:shadow-2xl">
-            <div class="">
-                <img src="https://images.pexels.com/photos/952670/pexels-photo-952670.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="" class="h-56 w-full border-white border-8 hover:opacity-25">
-            </div>
-            <div class="px-4 py-4 md:px-10">
-                <h1 class="font-bold text-lg ">
-                    Project Title
-                </h1>
-                <p class="py-4">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quas sapiente voluptate earum natus facilis dolor deserunt dolorum tempora obcaecati consequatur rem, vel distinctio perferendis tempore nemo sequi eos accusantium.
-                </p>
-                <div class="flex flex-wrap pt-8">
-                    <div class="w-full md:w-1/3 text-sm font-medium">
-                        NOVEMBER 1,2019
+
+    <div *ngFor="let project of tab_project; let i = index" class="col col-icon" (click)="onCreate(project)">
+
+
+
+        <div class="container mx-auto cursor-pointer ">
+            <div class="w-full   md:px-4 lg:px-6 py-5 transform duration-500 lg:hover:-translate-y-1 lg:hover:scale-110">
+                <div class=" shadow-xl divide-y-2 hover:shadow-2xl">
+                    <div class=" grid divide-x grid-flow-col ">
+                        <div *ngFor="let  image of project.src" class="col-span-2 ">
+                            <img src="{{image}}" alt="" class="h-56 w-full border-white border-8 ">
+
+                        </div>
+
                     </div>
+                    <div class="bg-spindle-400 px-4 py-4 md:px-10">
+                        <h1 class="border-b-2 border-width-4 border-white font-bold text-lg ">
+                            {{project.title}}
+                        </h1>
+                        <p class="py-4 truncate">
+                            {{project.description}}
+                        </p>
+                        <div class="flex flex-wrap pt-8">
+                            <div class="w-full md:w-1/3 text-sm font-medium">
+                                NOVEMBER 1,2019
+                            </div>
 
-                    <!-- Techno Use-->
-                    <div class="md:2/3">
-                        <div class="space-x-4 text-sm font-medium ">
-                            <p class="inline text-spindle-700">Technologie : </p>
-                            <p class="inline">C++</p>
-                            <p class="inline">QT</p>
+                            <!-- Techno Use-->
+                            <div class="md:2/3">
+                                <div class="space-x-4 text-sm font-medium ">
+                                    <p class="inline text-spindle-700">Technologie : </p>
+
+                                    <p *ngFor=" let techno of project.techno;" class="inline">{{techno}}</p>
 
 
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+
         </div>
     </div>
-
 </div>

@@ -11,18 +11,18 @@
         </div>
 
         <div class="md:col-span-2  col  col-start-1 px-4 col-span-3 ">
-            <h1 class="bg-blueDarkColor-100">Description</h1>
+            <h1>Description</h1>
             <p>{{text_resume}}</p>
 
             <br>
-            <div class="grid grid-cols-5">
+            <div class="grid grid-cols-5 ">
                 <!-- Bouton CV -->
-                <div class="col-start-2 lg:col-start-1">
-                    <img class="iconButton grown " (click)="onCreate()" src="../../assets/images/icon/cv.png" alt="">
+                <div class="col-start-2 lg:col-start-1 ">
+                    <img class="iconButton grown " (click)="onCreate() " src="../../assets/images/icon/cv.png " alt=" ">
                 </div>
-                <div class="col-start-4 lg:col-start-2">
+                <div class="col-start-4 lg:col-start-2 ">
                     <a href='https://www.linkedin.com/in/samuel-nezou/'>
-                        <img class="iconButton grown" src='../../assets/images/icon/contact/linkedin.png' alt='QR Code' /></a>
+                        <img class="iconButton grown " src='../../assets/images/icon/contact/linkedin.png' alt='QR Code' /></a>
 
                 </div>
             </div>
@@ -33,16 +33,16 @@
 </body>
 <!-- Fenètre CV -->
 <ng-template #content>
-    <div class="modal-header">
-        <h4 class="modal-title" id="modal-basic-title">CV</h4>
+    <div class="modal-header ">
+        <h4 class="modal-title " id="modal-basic-title ">CV</h4>
     </div>
     <div class="modal-body text-center ">
-        <img src="../../assets/images/icon/CV.jpeg" alt="CV" style="width: 1000px;">
+        <img src="../../assets/images/icon/CV.jpeg " alt="CV " style="width: 1000px; ">
     </div>
-    <div class="modal-footer">
+    <div class="modal-footer ">
 
-        <form action="../../assets/images/icon/CV.jpeg" method="GET">
-            <button type="button" class="btn btn-outline-dark" (click)="modal.close('Save click')">Télécharger PDF</button>
+        <form action="../../assets/images/icon/CV.jpeg " method="GET ">
+            <button type="button " class="btn btn-outline-dark " (click)="modal.close( 'Save click') ">Télécharger PDF</button>
 
         </form>
 

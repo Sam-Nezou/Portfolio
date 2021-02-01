@@ -15,7 +15,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ResumeComponent } from './resume/resume.component';
 import { ExperienceComponent } from './experience/experience.component';
 import { ProjectComponent } from './project/project.component';
-import { CvDialogComponent } from './cv-dialog/cv-dialog.component'
+import { CvDialogComponent } from './cv-dialog/cv-dialog.component';
+import { ProjectDialogComponent } from './project-dialog/project-dialog.component'
 
 
 @NgModule({
@@ -29,7 +30,8 @@ import { CvDialogComponent } from './cv-dialog/cv-dialog.component'
     ResumeComponent,
     ExperienceComponent,
     ProjectComponent,
-    CvDialogComponent
+    CvDialogComponent,
+    ProjectDialogComponent
   ],
   imports: [
     BrowserModule,
