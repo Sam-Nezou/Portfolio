@@ -77,6 +77,4 @@ todayDate =new Date();
 
   ]
 
-
-
 }

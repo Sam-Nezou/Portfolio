@@ -11,13 +11,19 @@
 
 
                     <li class="timeline-item" *ngFor="let experience of experiences; let i = index">
-                        <div class="timeline-info" *ngIf="experience.dateEnd.getTime() != todayDate.getTime()">
-                            <span>{{experience.dateStart.toLocaleString('default', { month: 'long' ,year:'numeric'})}} -  {{experience.dateEnd.toLocaleString('default', { month: 'long' ,year:'numeric'}) }}  </span>
+                        <div>
+                            <div class="timeline-info" *ngIf="experience.dateEnd.getTime() != todayDate.getTime()">
+                                <span>{{experience.dateStart.toLocaleString('default', { month: 'long' ,year:'numeric'})}} -  {{experience.dateEnd.toLocaleString('default', { month: 'long' ,year:'numeric'}) }}  </span>
+                            </div>
+                            <div class="timeline-info" *ngIf="experience.dateEnd.getTime() == todayDate.getTime()">
+                                <span>{{experience.dateStart.toLocaleString('default', { month: 'long' ,year:'numeric'})}} - Aujourd'hui</span>
+                            </div>
                         </div>
-                        <div class="timeline-info" *ngIf="experience.dateEnd.getTime() == todayDate.getTime()">
-                            <span>{{experience.dateStart.toLocaleString('default', { month: 'long' ,year:'numeric'})}} - Aujourd'hui</span>
+                        <div class="italic text-xs font-thin tracking-widest">
+                            {{experience.location}}
                         </div>
                         <div class="timeline-marker "></div>
+
                         <div class="timeline-content ">
                             <h3 class="timeline-title ">{{experience.title}}</h3>
                             <p>{{experience.description}}</p>
@@ -45,11 +51,16 @@
 
 
                     <li class="timeline-item" *ngFor="let experience of formations; let i = index">
-                        <div class="timeline-info" *ngIf="experience.dateEnd.getTime() != todayDate.getTime()">
-                            <span>{{experience.dateStart.toLocaleString('default', { month: 'long' ,year:'numeric'})}} -  {{experience.dateEnd.toLocaleString('default', { month: 'long' ,year:'numeric'}) }}  </span>
+                        <div>
+                            <div class="timeline-info" *ngIf="experience.dateEnd.getTime() != todayDate.getTime()">
+                                <span>{{experience.dateStart.toLocaleString('default', { month: 'long' ,year:'numeric'})}} -  {{experience.dateEnd.toLocaleString('default', { month: 'long' ,year:'numeric'}) }}  </span>
+                            </div>
+                            <div class="timeline-info" *ngIf="experience.dateEnd.getTime() == todayDate.getTime()">
+                                <span>{{experience.dateStart.toLocaleString('default', { month: 'long' ,year:'numeric'})}} - Aujourd'hui</span>
+                            </div>
                         </div>
-                        <div class="timeline-info" *ngIf="experience.dateEnd.getTime() == todayDate.getTime()">
-                            <span>{{experience.dateStart.toLocaleString('default', { month: 'long' ,year:'numeric'})}} à Aujourd'hui</span>
+                        <div class="italic text-xs font-thin tracking-widest">
+                            {{experience.location}}
                         </div>
                         <div class="timeline-marker "></div>
                         <div class="timeline-content ">

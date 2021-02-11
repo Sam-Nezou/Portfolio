@@ -1,5 +1,7 @@
 <div class="whiteBg">
 
+
+
     <h1 class="panel_title">Mes Compétences</h1>
 
 
@@ -18,9 +20,9 @@
             <h1 class="comps wow fadeInLeftBig ">Développement Logiciel</h1>
             <div class="row grid grid-cols-3  gap-2">
 
-                <div *ngFor="let icon of dev_Logi_icons; let i = index" class="col col-icon">
+                <div *ngFor="let icon of icons_dev_logi;" class="col col-icon">
 
-                    <img class="wow fadeIn" [attr.data-wow-delay]="icon.delay" [src]="icon.source" [alt]="icon.alt">
+                    <img class="wow fadeIn" [src]="icon.img_source" [alt]="icon.name">
                     <p>{{icon.name}}</p>
                 </div>
 
@@ -32,9 +34,9 @@
         <div class="col lg:col-span-2 ">
 
             <h1 class="comps wow fadeInRightBig ">Développement Web</h1>
-            <div class="row grid grid-cols-4 gap-4 lg:grid-cols-5">
-                <div *ngFor="let icon of dev_Web_icons; let i = index" class="col col-icon">
-                    <img class="wow fadeIn" [attr.data-wow-delay]="icon.delay" [src]="icon.source" [alt]="icon.alt">
+            <div class="row grid grid-cols-4 gap-4 ">
+                <div *ngFor="let icon of icons_dev_web; let i = index" class="col col-icon">
+                    <img class="wow fadeIn" [src]="icon.img_source" [alt]="icon.name">
                     <p>{{icon.name}}</p>
                 </div>
             </div>
@@ -47,8 +49,8 @@
         <div class="col prog-panel lg:col-start-1 lg:col-span-2">
             <h1 class="comps wow fadeInLeftBig">Audiovisuel</h1>
             <div class="row grid grid-cols-2 gap-2">
-                <div *ngFor="let icon of audiovisuel_icons; let i = index" class="col col-icon">
-                    <img class="wow fadeIn" [attr.data-wow-delay]="icon.delay" [src]="icon.source" [alt]="icon.alt">
+                <div *ngFor="let icon of icons_audiovisuel; let i = index" class="col col-icon">
+                    <img class="wow fadeIn" [src]="icon.img_source" [alt]="icon.name">
                     <p>{{icon.name}}</p>
                 </div>
 
@@ -60,8 +62,8 @@
             <div class="row grid grid-cols-2 gap-4">
 
 
-                <div *ngFor="let icon of BDD_icons; let i = index" class="col col-icon">
-                    <img class="wow fadeIn" [attr.data-wow-delay]="icon.delay" [src]="icon.source" [alt]="icon.alt">
+                <div *ngFor="let icon of icons_bdd; let i = index" class="col col-icon">
+                    <img class="wow fadeIn" [src]="icon.img_source" [alt]="icon.name">
                     <p>{{icon.name}}</p>
                 </div>
 
@@ -72,8 +74,8 @@
             <h1 class="comps wow fadeInRightBig">Les +</h1>
             <div class="row grid grid-cols-5 gap-4">
 
-                <div *ngFor="let icon of plus_icons; let i = index" class="col col-icon">
-                    <img class="wow fadeIn" [attr.data-wow-delay]="icon.delay" [src]="icon.source" [alt]="icon.alt">
+                <div *ngFor="let icon of icons_more; let i = index" class="col col-icon">
+                    <img class="wow fadeIn" [src]="icon.img_source" [alt]="icon.name">
                     <p>{{icon.name}}</p>
                 </div>
 

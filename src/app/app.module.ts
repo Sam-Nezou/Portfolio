@@ -16,7 +16,8 @@ import { ResumeComponent } from './resume/resume.component';
 import { ExperienceComponent } from './experience/experience.component';
 import { ProjectComponent } from './project/project.component';
 import { CvDialogComponent } from './cv-dialog/cv-dialog.component';
-import { ProjectDialogComponent } from './project-dialog/project-dialog.component'
+import { ProjectDialogComponent } from './project-dialog/project-dialog.component';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -39,7 +40,8 @@ import { ProjectDialogComponent } from './project-dialog/project-dialog.componen
 //    NgbModule,
     NgwWowModule,
     MatDialogModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    HttpClientModule,
   ],
   exports:[
     MatDialogModule
